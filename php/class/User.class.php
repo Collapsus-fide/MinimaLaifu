@@ -65,8 +65,8 @@ HTML
 
    public static function createFromAuth(array $data){
       $stmt = MyPDO::getInstance()->prepare(<<<SQL
-        SELECT id, lastName, firstName, login ,phone
-        FROM user
+        SELECT id, login
+        FROM admin
         WHERE login = :log 
         AND sha512pass = :mdp;
 SQL

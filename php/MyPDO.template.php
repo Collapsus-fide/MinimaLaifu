@@ -2,7 +2,7 @@
 require_once 'MyPDO.class.php';
 
 MyPDO::setConfiguration(
-'mysql:host=localhost;dbname=aes;charset=utf8',
+'mysql:host=localhost;dbname=minimalaifu;charset=utf8',
 'root',
 '');
 /*
